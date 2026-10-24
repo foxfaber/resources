@@ -1,0 +1,141 @@
+/* Falegnameria passo a passo — tipografia di stampa.
+   Formato di taglio 170 × 240 mm, gabbia a colonna unica da 136 mm,
+   colonnino di 12 mm per i numeri d'operazione. Testatine e folii
+   vengono stampati a parte (build/impagina.py) nel margine inferiore. */
+
+@page { size: 170mm 240mm; margin: 19mm 17mm 21mm 17mm; }
+
+:root{
+  --inchiostro:#201c17;
+  --inchiostro-2:#5c544a;
+  --linea:#c7c0b2;
+  --fondo-box:#f2efe8;
+  --mina:#2a6265;
+  --avviso:#8f4219;
+}
+
+*{box-sizing:border-box;}
+html{font-size:10.4pt;}
+body{
+  margin:0;color:var(--inchiostro);background:#fff;
+  font-family:"Source Serif 4",Georgia,serif;
+  line-height:1.52;text-align:justify;hyphens:auto;
+  orphans:2;widows:2;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+}
+p{margin:0 0 .62em;}
+p:last-child{margin-bottom:0;}
+em{font-style:italic;}
+h1,h2,h3,h4,.tit{font-family:"Zilla Slab",Rockwell,Georgia,serif;text-align:left;hyphens:none;}
+h2,h3,h4{break-after:avoid-page;}
+.mono,.dato,figcaption,.folio,.calc,th,.quota{font-family:"IBM Plex Mono",ui-monospace,monospace;}
+
+/* ---------- apertura di capitolo ---------- */
+.apertura{display:block;margin-bottom:9mm;}
+.apertura .lastra{
+  width:100%;aspect-ratio:16/9;max-height:92mm;overflow:hidden;
+  border:.4pt solid var(--linea);background:var(--fondo-box);
+  display:flex;align-items:center;justify-content:center;margin-bottom:7mm;
+}
+.apertura .lastra img{width:100%;height:100%;object-fit:cover;display:block;}
+.apertura .lastra .attesa{
+  font-family:"IBM Plex Mono",monospace;font-size:7.4pt;color:var(--inchiostro-2);
+  text-align:center;padding:0 12mm;line-height:1.6;
+}
+.apertura .numero{
+  font-family:"IBM Plex Mono",monospace;font-size:8pt;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mina);margin-bottom:2.5mm;
+}
+.apertura h1{font-size:25pt;line-height:1.1;font-weight:700;margin:0 0 3.5mm;letter-spacing:-.01em;}
+.apertura .sommario{font-size:11.4pt;line-height:1.45;color:var(--inchiostro-2);margin:0 0 4mm;text-align:left;}
+.apertura .riga-dati{
+  display:flex;flex-wrap:wrap;gap:1mm 6mm;font-family:"IBM Plex Mono",monospace;
+  font-size:7.8pt;color:var(--inchiostro-2);border-top:.4pt solid var(--linea);
+  border-bottom:.4pt solid var(--linea);padding:2mm 0;
+}
+
+/* ---------- gerarchia interna ---------- */
+h2{font-size:15pt;font-weight:600;margin:8mm 0 3mm;}
+h2.sezione{border-bottom:1.2pt solid var(--inchiostro);padding-bottom:1.6mm;}
+h3{font-size:11.6pt;font-weight:600;margin:0 0 1.4mm;}
+.occhiello{
+  font-family:"IBM Plex Mono",monospace;font-size:7.6pt;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--mina);margin-bottom:1.5mm;
+}
+
+/* ---------- operazioni numerate ---------- */
+.passo{display:grid;grid-template-columns:12mm 1fr;gap:0 4mm;margin:0 0 6mm;break-inside:avoid-page;}
+.passo.lunga{break-inside:auto;}
+.passo>.n{
+  font-family:"IBM Plex Mono",monospace;font-size:14pt;color:var(--mina);
+  font-variant-numeric:tabular-nums;line-height:1.1;padding-top:.6mm;
+}
+.passo>.corpo{min-width:0;}
+.dato{
+  display:inline-block;font-size:8.2pt;line-height:1.45;color:var(--inchiostro-2);
+  background:var(--fondo-box);border:.4pt solid var(--linea);padding:1.4mm 2mm;margin:1mm 0 .6mm;
+}
+.errore{font-size:9.6pt;color:var(--inchiostro-2);margin-top:1mm;}
+.errore b{font-family:"Zilla Slab",serif;color:var(--avviso);font-weight:600;}
+
+/* ---------- figure ---------- */
+figure{margin:3mm 0 4mm;break-inside:avoid-page;}
+figure svg{display:block;width:100%;height:auto;color:var(--inchiostro);
+  border:.4pt solid var(--linea);background:var(--fondo-box);padding:3mm;}
+figure svg text{font-family:"IBM Plex Mono",ui-monospace,monospace;}
+figcaption{font-size:8.2pt;line-height:1.5;color:var(--inchiostro-2);margin-top:1.8mm;text-align:left;}
+figcaption b{color:var(--mina);font-weight:400;}
+
+/* ---------- schede ---------- */
+.schede{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin:0 0 6mm;break-inside:avoid-page;}
+.scheda{border:.4pt solid var(--linea);background:var(--fondo-box);padding:3.5mm 4mm;}
+.scheda h3{font-size:9.6pt;margin-bottom:1.8mm;}
+.scheda ul{margin:0;padding-left:4.5mm;font-size:9.5pt;line-height:1.45;text-align:left;}
+.scheda li{margin-bottom:1mm;}
+.scheda.sicurezza{background:#fff;border:0;border-left:1.6pt solid var(--avviso);padding-left:4mm;}
+.scheda.sicurezza h3{color:var(--avviso);}
+
+/* ---------- test ---------- */
+.test{break-before:page;}
+.dom{display:grid;grid-template-columns:10mm 1fr;gap:0 3mm;margin-bottom:4mm;break-inside:avoid-page;}
+.dom>.q{font-family:"IBM Plex Mono",monospace;font-size:8.4pt;color:var(--mina);padding-top:.9mm;}
+.dom>.corpo{min-width:0;}
+.opz{list-style:none;margin:1.2mm 0 0;padding:0;font-size:9.8pt;}
+.opz li{display:grid;grid-template-columns:5mm 1fr;margin-bottom:.6mm;}
+.opz .let{font-family:"IBM Plex Mono",monospace;font-size:8.4pt;color:var(--inchiostro-2);}
+.riquadro-prova{border:.4pt solid var(--linea);padding:3mm 4mm;margin:0 0 6mm;background:var(--fondo-box);font-size:9.6pt;}
+
+/* ---------- soluzioni ---------- */
+.soluzioni{break-before:page;}
+.sol{display:grid;grid-template-columns:10mm 1fr;gap:0 3mm;margin-bottom:3.4mm;break-inside:avoid-page;}
+.sol>.q{font-family:"IBM Plex Mono",monospace;font-size:8.4pt;color:var(--mina);padding-top:.9mm;}
+.chiave{font-family:"Zilla Slab",serif;font-weight:600;}
+.calc{
+  font-size:8.6pt;line-height:1.6;white-space:pre-wrap;background:var(--fondo-box);
+  border:.4pt solid var(--linea);padding:2.5mm 3mm;margin:1.5mm 0;text-align:left;
+}
+table{border-collapse:collapse;width:100%;font-size:8.8pt;margin:2mm 0 3mm;}
+thead{display:table-header-group;}
+tr{break-inside:avoid-page;}
+th,td{text-align:left;vertical-align:top;padding:1.5mm 2mm;border-bottom:.4pt solid var(--linea);hyphens:auto;}
+th{font-size:7.4pt;letter-spacing:.08em;text-transform:uppercase;color:var(--inchiostro-2);background:var(--fondo-box);border-bottom:.8pt solid var(--inchiostro);}
+td.causa{font-weight:600;width:34%;}
+
+/* ---------- preliminari ---------- */
+.pagina{break-after:page;}
+.pagina:last-child{break-after:auto;}
+.occhio{display:flex;flex-direction:column;justify-content:center;min-height:170mm;}
+.occhio h1{font-size:34pt;line-height:1.04;margin:0 0 5mm;letter-spacing:-.015em;}
+.occhio .sotto{font-size:13pt;color:var(--inchiostro-2);text-align:left;margin:0 0 10mm;}
+.occhio .filetto{width:34mm;height:1.6pt;background:var(--mina);margin-bottom:8mm;}
+.colofone{font-size:8.6pt;line-height:1.6;color:var(--inchiostro-2);}
+.indice .voce{
+  display:grid;grid-template-columns:9mm 1fr auto;gap:0 3mm;align-items:baseline;
+  padding:1.6mm 0;border-bottom:.3pt dotted var(--linea);
+}
+.indice .voce .n{font-family:"IBM Plex Mono",monospace;font-size:8.2pt;color:var(--mina);}
+.indice .voce .t{font-size:10pt;}
+.indice .voce .t em{display:block;font-style:normal;font-size:8.4pt;color:var(--inchiostro-2);}
+.indice .voce .p{font-family:"IBM Plex Mono",monospace;font-size:9pt;font-variant-numeric:tabular-nums;}
+.indice .gruppo{font-family:"IBM Plex Mono",monospace;font-size:7.6pt;letter-spacing:.16em;text-transform:uppercase;color:var(--mina);margin:6mm 0 1.5mm;}
+.indice .gruppo:first-of-type{margin-top:0;}

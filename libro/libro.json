@@ -1,0 +1,105 @@
+{
+  "titolo": "Falegnameria passo a passo",
+  "sottotitolo": "Manuale di bottega: le operazioni illustrate una per volta, con test e soluzioni commentate",
+  "edizione": "Prima edizione · bozza di produzione",
+  "capitoli": [
+    {
+      "id": "01",
+      "titolo": "Il legno",
+      "sommario": "Fibra, anelli, ritiro e umidità: perché una tavola si muove e come si scegliono le tavole che non tradiscono.",
+      "file": "capitoli/01-il-legno.html",
+      "parte": "Parte prima · Prima di tagliare",
+      "dati": [
+        "Livello: 1 di 4",
+        "Tempo di lettura: 40 min",
+        "Da avere: igrometro a puntali",
+        "Nessun taglio: capitolo di scelta"
+      ]
+    },
+    {
+      "id": "02",
+      "titolo": "Il banco e la morsa",
+      "sommario": "Altezza di lavoro, fermi, piano di riscontro: il banco è il primo utensile e decide la precisione di tutti gli altri.",
+      "parte": "Parte prima · Prima di tagliare"
+    },
+    {
+      "id": "03",
+      "titolo": "Misurare e tracciare",
+      "sommario": "Squadra, truschino, coltello da tracciatura e il metodo delle facce di riferimento.",
+      "parte": "Parte prima · Prima di tagliare"
+    },
+    {
+      "id": "04",
+      "titolo": "Affilatura",
+      "sommario": "Angoli, pietre, controllo del filo in sessanta secondi: senza filo non esiste lavoro a mano.",
+      "parte": "Parte prima · Prima di tagliare"
+    },
+    {
+      "id": "05",
+      "titolo": "Segare a mano",
+      "sommario": "Saracco, costola e gattuccio: tagli per lungo, di traverso e l'arte di seguire la linea.",
+      "parte": "Parte seconda · I gesti fondamentali"
+    },
+    {
+      "id": "06",
+      "titolo": "Piallare a squadro",
+      "sommario": "Le quattro facce in sequenza, svergolatura e controlli: da tavola grezza a pezzo in squadra.",
+      "parte": "Parte seconda · I gesti fondamentali"
+    },
+    {
+      "id": "07",
+      "titolo": "Mortasa e tenone",
+      "sommario": "Il giunto che tiene in piedi sedie, telai e porte: tracciatura, taglio, verifica e cosa fare quando non chiude.",
+      "file": "capitoli/07-mortasa-e-tenone.html",
+      "parte": "Parte terza · I giunti",
+      "dati": [
+        "Livello: 2 di 4",
+        "Tempo: 90 min",
+        "Legno di prova: 2 × frassino 45 × 45 × 300 mm",
+        "Tolleranza di accoppiamento: 0,05–0,1 mm"
+      ]
+    },
+    {
+      "id": "08",
+      "titolo": "Mezzo legno e incastri a dardo",
+      "sommario": "Telai, traverse e crociere: i giunti sovrapposti, rapidi e robusti.",
+      "parte": "Parte terza · I giunti"
+    },
+    {
+      "id": "09",
+      "titolo": "Coda di rondine",
+      "sommario": "Passante e cieca: tracciatura, sequenza di taglio e la rifinitura che la rende invisibile.",
+      "parte": "Parte terza · I giunti"
+    },
+    {
+      "id": "10",
+      "titolo": "Scanalature e battute",
+      "sommario": "Fondi di cassetto e pannelli: come si lascia al legno lo spazio per muoversi.",
+      "parte": "Parte terza · I giunti"
+    },
+    {
+      "id": "11",
+      "titolo": "Incollaggi e serraggi",
+      "sommario": "Colle, tempi aperti, pressione giusta e squadratura: i dieci minuti in cui si decide il mobile.",
+      "parte": "Parte quarta · Montaggio e finitura"
+    },
+    {
+      "id": "12",
+      "titolo": "Ferramenta e cerniere",
+      "sommario": "Scassi per cerniere, allineamenti e giochi: la meccanica di porte e sportelli.",
+      "parte": "Parte quarta · Montaggio e finitura"
+    },
+    {
+      "id": "13",
+      "titolo": "Finiture",
+      "sommario": "Carteggiatura, olio, gommalacca e vernice: proteggere senza spegnere il legno.",
+      "parte": "Parte quarta · Montaggio e finitura"
+    },
+    {
+      "id": "14",
+      "titolo": "Tre progetti completi",
+      "sommario": "Sgabello, cassetta con code di rondine e tavolino con telaio: tutto il libro applicato.",
+      "parte": "Parte quinta · Progetti"
+    }
+  ]
+}
