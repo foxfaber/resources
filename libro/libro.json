@@ -98,19 +98,40 @@
       "id": "08",
       "titolo": "Mezzo legno e incastri a dardo",
       "sommario": "Telai, traverse e crociere: i giunti sovrapposti, rapidi e robusti.",
-      "parte": "Parte terza · I giunti"
+      "parte": "Parte terza · I giunti",
+      "file": "capitoli/08-mezzo-legno-e-dardo.html",
+      "dati": [
+        "Livello: 2 di 4",
+        "Tempo: 40 min a giunto",
+        "Profondità: metà spessore",
+        "Superficie di colla: larghezza²"
+      ]
     },
     {
       "id": "09",
       "titolo": "Coda di rondine",
       "sommario": "Passante e cieca: tracciatura, sequenza di taglio e la rifinitura che la rende invisibile.",
-      "parte": "Parte terza · I giunti"
+      "parte": "Parte terza · I giunti",
+      "file": "capitoli/09-coda-di-rondine.html",
+      "dati": [
+        "Livello: 3 di 4",
+        "Tempo: 4 h per un cassetto",
+        "Inclinazione: 1:8 duri · 1:6 teneri",
+        "Prova a secco: una sola"
+      ]
     },
     {
       "id": "10",
       "titolo": "Scanalature e battute",
       "sommario": "Fondi di cassetto e pannelli: come si lascia al legno lo spazio per muoversi.",
-      "parte": "Parte terza · I giunti"
+      "parte": "Parte terza · I giunti",
+      "file": "capitoli/10-scanalature-e-battute.html",
+      "dati": [
+        "Livello: 2 di 4",
+        "Tempo: 20 min a scanalatura",
+        "Profondità: 1/3 dello spessore",
+        "Gioco del pannello: calcolato"
+      ]
     },
     {
       "id": "11",
