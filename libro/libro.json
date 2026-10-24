@@ -1,7 +1,7 @@
 {
   "titolo": "Falegnameria passo a passo",
   "sottotitolo": "Manuale di bottega: le operazioni illustrate una per volta, con test e soluzioni commentate",
-  "edizione": "Prima edizione · bozza di produzione",
+  "edizione": "Prima edizione · quattordici capitoli, 224 quesiti con soluzioni commentate",
   "capitoli": [
     {
       "id": "01",
@@ -137,25 +137,53 @@
       "id": "11",
       "titolo": "Incollaggi e serraggi",
       "sommario": "Colle, tempi aperti, pressione giusta e squadratura: i dieci minuti in cui si decide il mobile.",
-      "parte": "Parte quarta · Montaggio e finitura"
+      "parte": "Parte quarta · Montaggio e finitura",
+      "file": "capitoli/11-incollaggi-e-serraggi.html",
+      "dati": [
+        "Livello: 2 di 4",
+        "Finestra utile: 8–10 min",
+        "Pressione: 0,5–1 N/mm²",
+        "Tempo di carico: 24 h"
+      ]
     },
     {
       "id": "12",
       "titolo": "Ferramenta e cerniere",
       "sommario": "Scassi per cerniere, allineamenti e giochi: la meccanica di porte e sportelli.",
-      "parte": "Parte quarta · Montaggio e finitura"
+      "parte": "Parte quarta · Montaggio e finitura",
+      "file": "capitoli/12-ferramenta-e-cerniere.html",
+      "dati": [
+        "Livello: 3 di 4",
+        "Tempo: 45 min per anta",
+        "Luce perimetrale: 2 mm",
+        "Regolazione: 0,1 mm per volta"
+      ]
     },
     {
       "id": "13",
       "titolo": "Finiture",
       "sommario": "Carteggiatura, olio, gommalacca e vernice: proteggere senza spegnere il legno.",
-      "parte": "Parte quarta · Montaggio e finitura"
+      "parte": "Parte quarta · Montaggio e finitura",
+      "file": "capitoli/13-finiture.html",
+      "dati": [
+        "Livello: 2 di 4",
+        "Carteggiatura: 80 → 240",
+        "Mani: 3 sottili",
+        "Indurimento: 7–14 giorni"
+      ]
     },
     {
       "id": "14",
       "titolo": "Tre progetti completi",
       "sommario": "Sgabello, cassetta con code di rondine e tavolino con telaio: tutto il libro applicato.",
-      "parte": "Parte quinta · Progetti"
+      "parte": "Parte quinta · Progetti",
+      "file": "capitoli/14-tre-progetti.html",
+      "dati": [
+        "Livello: 3 di 4",
+        "Sgabello: 2 giorni",
+        "Cassetta: 1 giorno",
+        "Tavolino: 4 giorni + finitura"
+      ]
     }
   ]
 }

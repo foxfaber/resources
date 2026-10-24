@@ -1,0 +1,29 @@
+<figure>
+<svg viewBox="0 0 600 220" role="img" aria-label="Sequenza delle grane di carteggiatura: ogni grana deve cancellare i graffi della precedente, e saltare un passaggio lascia righe che la finitura mette in evidenza.">
+  <defs><pattern id="h131" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="7" stroke="currentColor" stroke-width="1" opacity=".4"/></pattern>
+  <marker id="f131" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--mina)"/></marker></defs>
+  <text x="30" y="26" font-size="12">sequenza corretta: ogni grana cancella i graffi della precedente</text>
+  <g>
+    <rect x="30" y="40" width="120" height="40" fill="url(#h131)" stroke="currentColor" stroke-width="2"/>
+    <path d="M40,72 L52,48 M64,72 L76,48 M88,72 L100,48 M112,72 L124,48" stroke="currentColor" stroke-width="2.5"/>
+    <text x="30" y="96" font-size="12">80: toglie materiale</text>
+    <rect x="175" y="40" width="120" height="40" fill="url(#h131)" stroke="currentColor" stroke-width="2"/>
+    <path d="M185,70 L193,50 M209,70 L217,50 M233,70 L241,50 M257,70 L265,50" stroke="currentColor" stroke-width="1.6"/>
+    <text x="175" y="96" font-size="12">120</text>
+    <rect x="320" y="40" width="120" height="40" fill="url(#h131)" stroke="currentColor" stroke-width="2"/>
+    <path d="M330,68 L334,52 M354,68 L358,52 M378,68 L382,52 M402,68 L406,52" stroke="currentColor" stroke-width="1"/>
+    <text x="320" y="96" font-size="12">180</text>
+    <rect x="465" y="40" width="105" height="40" fill="var(--mina)" opacity=".25" stroke="var(--mina)" stroke-width="2"/>
+    <text x="465" y="96" font-size="12" fill="var(--mina)">240: si ferma qui</text>
+  </g>
+  <text x="30" y="136" font-size="12" fill="var(--avviso)">saltando la 120: i graffi della 80 restano sotto</text>
+  <rect x="30" y="150" width="240" height="40" fill="url(#h131)" stroke="currentColor" stroke-width="2"/>
+  <path d="M40,182 L52,158 M88,182 L100,158 M160,182 L172,158 M220,182 L232,158" stroke="var(--avviso)" stroke-width="2.5"/>
+  <text x="30" y="210" font-size="12">compaiono solo quando arriva la finitura</text>
+  <text x="330" y="150" font-size="12">oltre la 240 su legni da olio:</text>
+  <text x="330" y="168" font-size="12">i pori si chiudono e la finitura</text>
+  <text x="330" y="186" font-size="12">non penetra più</text>
+  <line x1="300" y1="170" x2="322" y2="170" stroke="var(--mina)" stroke-width="2" marker-end="url(#f131)"/>
+</svg>
+<figcaption><b>Fig. 13.1</b> — La carteggiatura non leviga: sostituisce graffi grossi con graffi fini. Saltare una grana lascia sotto i solchi profondi, che si vedono solo quando la finitura li riempie e li illumina.</figcaption>
+</figure>

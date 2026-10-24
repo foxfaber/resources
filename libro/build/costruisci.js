@@ -84,7 +84,7 @@ function preliminari() {
 <section class="pagina indice">
   <h2 class="sezione">Indice</h2>
   ${voci}
-  <p class="colofone" style="margin-top:7mm">I capitoli senza numero di pagina sono in lavorazione in questa bozza. Aggiornato al ${oggi}.</p>
+  <p class="colofone" style="margin-top:7mm">${libro.capitoli.every((c) => indice[c.id]) ? `Aggiornato al ${oggi}.` : `I capitoli senza numero di pagina sono in lavorazione in questa bozza. Aggiornato al ${oggi}.`}</p>
 </section>`);
 }
 
