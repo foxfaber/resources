@@ -59,13 +59,27 @@
       "id": "05",
       "titolo": "Segare a mano",
       "sommario": "Saracco, costola e gattuccio: tagli per lungo, di traverso e l'arte di seguire la linea.",
-      "parte": "Parte seconda · I gesti fondamentali"
+      "parte": "Parte seconda · I gesti fondamentali",
+      "file": "capitoli/05-segare-a-mano.html",
+      "dati": [
+        "Livello: 2 di 4",
+        "Esercizio: 20 tagli di prova",
+        "Larghezza del taglio: 0,6–0,9 mm",
+        "Ritmo: un colpo al secondo"
+      ]
     },
     {
       "id": "06",
       "titolo": "Piallare a squadro",
       "sommario": "Le quattro facce in sequenza, svergolatura e controlli: da tavola grezza a pezzo in squadra.",
-      "parte": "Parte seconda · I gesti fondamentali"
+      "parte": "Parte seconda · I gesti fondamentali",
+      "file": "capitoli/06-piallare-a-squadro.html",
+      "dati": [
+        "Livello: 2 di 4",
+        "Tempo: 30 min per pezzo",
+        "Truciolo di finitura: 0,03–0,05 mm",
+        "Controllo: riga, squadra, stecche"
+      ]
     },
     {
       "id": "07",
