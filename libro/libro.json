@@ -20,19 +20,40 @@
       "id": "02",
       "titolo": "Il banco e la morsa",
       "sommario": "Altezza di lavoro, fermi, piano di riscontro: il banco è il primo utensile e decide la precisione di tutti gli altri.",
-      "parte": "Parte prima · Prima di tagliare"
+      "parte": "Parte prima · Prima di tagliare",
+      "file": "capitoli/02-il-banco-e-la-morsa.html",
+      "dati": [
+        "Livello: 1 di 4",
+        "Mezza giornata di messa a punto",
+        "Tolleranza del piano: 0,5 mm su 1 m",
+        "Altezza di riferimento: il polso"
+      ]
     },
     {
       "id": "03",
       "titolo": "Misurare e tracciare",
       "sommario": "Squadra, truschino, coltello da tracciatura e il metodo delle facce di riferimento.",
-      "parte": "Parte prima · Prima di tagliare"
+      "parte": "Parte prima · Prima di tagliare",
+      "file": "capitoli/03-misurare-e-tracciare.html",
+      "dati": [
+        "Livello: 1 di 4",
+        "Tempo: 60 min",
+        "Unità: millimetri, sempre",
+        "Precisione di lavoro: 0,1 mm"
+      ]
     },
     {
       "id": "04",
       "titolo": "Affilatura",
       "sommario": "Angoli, pietre, controllo del filo in sessanta secondi: senza filo non esiste lavoro a mano.",
-      "parte": "Parte prima · Prima di tagliare"
+      "parte": "Parte prima · Prima di tagliare",
+      "file": "capitoli/04-affilatura.html",
+      "dati": [
+        "Livello: 1 di 4",
+        "Ripresa del filo: 2 min",
+        "Affilatura completa: 25 min",
+        "Angoli: 25° / 30° / 35°"
+      ]
     },
     {
       "id": "05",
